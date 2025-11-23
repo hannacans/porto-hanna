@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Hanna Syabila</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe5ec, #fff5f5);
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+            animation: fadeIn 1.2s ease-in-out;
+            min-height: 100vh;
+        }
+
+        /* Efek Partikel */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background-color: rgba(255, 182, 193, 0.6);
+            border-radius: 50%;
+            animation: floatUp linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #a63a50, #d46a6a);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h1 {
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .profile-container {
+            max-width: 900px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            animation: fadeUp 1s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-container:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border: 5px solid #a63a50;
+            box-shadow: 0 0 20px rgba(166,58,80,0.4);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px rgba(166,58,80,0.6);
+        }
+
+        h2 {
+            color: #a63a50;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeInText 1.2s ease forwards;
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #a63a50, #d46a6a);
+            color: white;
+            padding: 18px 0;
+            margin-top: 60px;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            position: relative;
+            z-index: 2;
+        }
+
+        a {
+            color: #ffe2e2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .profile-container {
+                padding: 25px;
+                margin: 30px 15px;
+            }
+
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+nav {
+    background-color: #d98b73;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #a63a50;
+}
+        
+    </style> -->
+</head>
+<body>
+
+    <!-- Efek Partikel -->
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <h1>Profil Diri</h1>
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="About.html">About</a>
+    <a href="Galeri.html">Galeri</a>
+    <a href="Kontak.html">Kontak</a>
+    <a href="Tugas.html">Tugas</a>
+    </nav>
+
+
+    <div class="profile-container">
+        <img src="2.jpg" alt="Foto Hanna Kecil" class="profile-img">
+        <h2>Hanna Syabila</h2>
+        <p>
+            Halo! Aku <strong>Hanna Syabila</strong>, dan foto kecil di atas adalah pengingat dari masa di mana semua mimpi dimulai. 
+            Sejak kecil, aku punya rasa ingin tahu yang besar, berimajinasi, dan mencoba hal baru.
+        </p>
+        <p>
+            Sekarang aku tumbuh menjadi mahasiswa <strong>Teknik Informatika</strong>, 
+            masih membawa semangat masa kecil itu untuk terus belajar dan berkarya di dunia teknologi.
+        </p>
+        <p>
+            Aku juga suka <strong>traveling</strong> dan <strong>menjelajahi kuliner</strong> di berbagai tempat. 
+            Dari setiap perjalanan dan rasa, aku belajar tentang keindahan hidup, budaya, dan makna kebersamaan. 🌸
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2025 Hanna Syabila | <a href="index.html">Kembali ke Beranda</a></p>
+    </footer>
+
+    <script>
+        // Script untuk membuat partikel lembut bergerak naik
+        const particlesContainer = document.getElementById('particles');
+        const numParticles = 30;
+
+        for (let i = 0; i < numParticles; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 8 + 3;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animationDuration = `${5 + Math.random() * 8}s`;
+            particle.style.animationDelay = `${Math.random() * 10}s`;
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+
+</body>
+</html>

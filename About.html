@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Hanna</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #a63a50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            letter-spacing: 1px;
+        }
+nav {
+    background-color: #d98b73;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #a63a50;
+}
+
+        .about-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .about-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            text-align: center;
+            color: #a63a50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #a63a50;
+            text-align: center;
+            margin: 30px 0;
+            background-color: #fff0f0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #a63a50;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #fdfcfc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style> -->
+</head>
+<body>
+
+    <header>
+        <h1>Tentang Aku</h1>
+    </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="About.html">About</a>
+    <a href="Galeri.html">Galeri</a>
+    <a href="Kontak.html">Kontak</a>
+    <a href="Tugas.html">Tugas</a>
+</nav>
+
+    <div class="about-container" id="about">
+        <h2>Perjalanan & Cerita Singkat</h2>
+        <p>
+            Aku <strong>Hanna Syabila</strong>, mahasiswa <strong>Teknik Informatika</strong>. 
+            Dunia teknologi buatku bukan hanya tentang kode dan sistem, tapi juga tentang kreativitas dan cara berpikir logis 
+            untuk menciptakan sesuatu yang bermanfaat bagi banyak orang.
+        </p>
+
+        <p>
+            Sejak kecil aku punya rasa ingin tahu yang besar. Dari situ aku belajar bahwa hal kecil bisa tumbuh menjadi sesuatu yang luar biasa 
+            kalau dijalani dengan konsisten. Hobi aku <strong>traveling</strong> dan <strong>menjelajahi kuliner</strong> di berbagai tempat, 
+            karena dari sana aku belajar memahami dunia dari sudut yang berbeda.
+        </p>
+
+        <p>
+            Tujuan aku sederhana : terus belajar, berkembang, dan sukses. 
+            Aku percaya bahwa masa depan dibangun dari keberanian untuk mencoba hal baru dan tidak takut gagal. 🌸
+        </p>
+
+        <div class="quote">
+            “Perjalanan ini bukan tentang menjadi orang lain, tetapi tentang menemukan siapa diriku sebenarnya.”
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hanna Syabila | <a href="index.html">Kembali ke Beranda</a></p>
+    </footer>
+
+    <script>
+        // Animasi fade-in saat di-scroll
+        const aboutSection = document.getElementById('about');
+
+        function checkScroll() {
+            const rect = aboutSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                aboutSection.classList.add('visible');
+            }
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+    </script>
+
+</body>
+</html>

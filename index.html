@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Hanna Syabila</title>
+<link rel="stylesheet" href="style.css">
+<!-- <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff5f3;
+}
+header {
+    background-color: #a63a50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+nav {
+    background-color: #d98b73;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #a63a50;
+}
+section {
+    padding: 30px;
+    text-align: center;
+}
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #a63a50;
+    object-fit: cover;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+footer {
+    background-color: #a63a50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+button {
+    background-color: #a63a50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #d98b73;
+}
+
+/* LIGHTBOX STYLE */
+#lightbox {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: pop 0.3s ease;
+}
+@keyframes pop {
+    0% {transform: scale(0.7); opacity:0;}
+    100% {transform: scale(1); opacity:1;}
+}
+</style> -->
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Website Hanna Syabila</h1>
+    <p>Mahasiswa Informatika | Traveling | Love My Self</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="About.html">About</a>
+    <a href="Galeri.html">Galeri</a>
+    <a href="Kontak.html">Kontak</a>
+    <a href="Tugas.html">Tugas</a>
+</nav>
+
+<section id="home">
+    <img src="1.jpg" alt="Foto Hanna" class="profile-img" id="profilePhoto">
+    <h2>Halo, Aku Hanna Syabila 👋</h2>
+    <p>Aku seorang mahasiswa Teknik Informatika selain fokus kuliah, aku juga suka traveling dan menjelajahi kuliner di berbagai tempat. Dari hobi itu, aku belajar banyak tentang pengalaman baru, budaya, dan rasa yang unik semuanya jadi inspirasi buat aku terus berkembang dan berkreasi.</p>
+    <p>Melalui website ini, kamu bisa mengenal aku lebih dekat mulai dari profil, hobi, sampai portofolio kecilku.</p>
+    <a href="Profile.html"><button>Lihat Profil</button></a>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+    <img src="" alt="Foto Besar Hanna" id="lightboxImg">
+</div>
+
+<footer>
+    <p>&copy; 2025 Hanna Syabila. Dibuat dengan penuh kasih sayang.</p>
+</footer>
+
+<script>
+// Ambil elemen
+const profilePhoto = document.getElementById('profilePhoto');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+// Klik foto profil -> tampilkan lightbox
+profilePhoto.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = profilePhoto.src;
+});
+
+// Klik di luar gambar -> tutup lightbox
+lightbox.addEventListener('click', (e) => {
+    if(e.target !== lightboxImg){
+        lightbox.style.display = 'none';
+    }
+});
+
+// ESC key untuk tutup lightbox
+document.addEventListener('keydown', (e) => {
+    if(e.key === "Escape"){
+        lightbox.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>
