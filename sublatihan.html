@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sub Latihan - Pemrograman Web 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+          135deg,
+          #e8797c 0%,
+          #c95d72 100%
+        ); /* Ganti gradient */
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+      }
+
+      .back-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-5px);
+      }
+
+      .back-button i {
+        margin-right: 10px;
+      }
+
+      header {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .header-icon {
+        font-size: 4em;
+      }
+
+      .header-info h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2em;
+      }
+
+      .header-meta {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+      }
+
+      .meta-item {
+        display: flex;
+        align-items: center;
+        color: #666;
+        font-size: 0.95em;
+      }
+
+      .meta-item i {
+        margin-right: 8px;
+        color: #c95d72; /* Ganti warna */
+      }
+      .minggu-badge {
+        display: inline-block;
+        background: linear-gradient(
+          135deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+        color: white;
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+      .description {
+        color: #666;
+        line-height: 1.6;
+        margin-top: 15px;
+      }
+
+      .sub-latihan-list {
+        display: grid;
+        gap: 20px;
+      }
+
+      .sub-item {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sub-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .sub-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+      }
+      .sub-item-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 12px;
+      }
+
+      .sub-number {
+        background: linear-gradient(
+          135deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-shrink: 0;
+      }
+
+      .sub-info {
+        flex: 1;
+      }
+
+      .sub-info h3 {
+        color: #333;
+        margin-bottom: 8px;
+        font-size: 1.2em;
+      }
+
+      .sub-description {
+        color: #666;
+        line-height: 1.5;
+        font-size: 0.95em;
+      }
+
+      .sub-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+      }
+
+      .category-badge {
+        display: inline-flex;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        color: #666;
+      }
+
+      .category-badge i {
+        margin-right: 5px;
+        color: #c95d72; /* Ganti warna */
+      }
+
+      .status-badge {
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: 600;
+      }
+
+      .status-selesai {
+        background: #d4edda;
+        color: #155724;
+      }
+
+      .status-progress {
+        background: #fff3cd;
+        color: #856404;
+      }
+
+      .status-belum {
+        background: #f8d7da;
+        color: #721c24;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
+      }
+
+      .empty-state i {
+        font-size: 5em;
+        margin-bottom: 20px;
+        opacity: 0.5;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .header-info h1 {
+          font-size: 1.5em;
+        }
+
+        .header-meta {
+          justify-content: center;
+        }
+
+        .sub-item-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="latihan.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Kembali ke Daftar Pertemuan
+      </a>
+
+      <header id="header">
+        <!-- Header will be generated dynamically -->
+      </header>
+
+      <div class="sub-latihan-list" id="subLatihanList">
+        <!-- Sub latihan items will be generated dynamically -->
+      </div>
+
+      <div class="empty-state" id="emptyState" style="display: none">
+        <i class="fas fa-folder-open"></i>
+        <h2>Tidak ada data latihan</h2>
+        <p>Pertemuan ini belum memiliki sub latihan.</p>
+      </div>
+    </div>
+
+    <script src="latihan-data.js"></script>
+    <script>
+      // Get ID from URL parameter
+      function getParameterByName(name) {
+        const url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+        const results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      // Render header
+      function renderHeader(latihan) {
+        const header = document.getElementById("header");
+        header.innerHTML = `
+                <div class="header-content">
+                    <div class="header-icon">${latihan.icon}</div>
+                    <div class="header-info">
+                        <h1>${latihan.title}</h1>
+                        <span class="minggu-badge">Minggu ${latihan.minggu}</span>
+                        <p class="description">${latihan.description}</p>
+                        <div class="header-meta">
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                Durasi: ${latihan.duration}
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-tasks"></i>
+                                ${latihan.totalSub} Sub Latihan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+      }
+
+      // Get status class
+      function getStatusClass(status) {
+        switch (status) {
+          case "selesai":
+            return "status-selesai";
+          case "progress":
+            return "status-progress";
+          default:
+            return "status-belum";
+        }
+      }
+
+      // Get status text
+      function getStatusText(status) {
+        switch (status) {
+          case "selesai":
+            return "✓ Selesai";
+          case "progress":
+            return "⏳ Progress";
+          default:
+            return "○ Belum";
+        }
+      }
+
+      // Render sub latihan list
+      function renderSubLatihan(subLatihan) {
+        const container = document.getElementById("subLatihanList");
+
+        if (!subLatihan || subLatihan.length === 0) {
+          document.getElementById("emptyState").style.display = "block";
+          return;
+        }
+
+        subLatihan.forEach((sub, index) => {
+          const item = document.createElement("div");
+          item.className = "sub-item";
+          item.onclick = () => {
+            window.location.href = sub.link;
+          };
+
+          item.innerHTML = `
+                    <div class="sub-item-header">
+                        <div class="sub-number">${index + 1}</div>
+                        <div class="sub-info">
+                            <h3>${sub.title}</h3>
+                            <p class="sub-description">${sub.description}</p>
+                        </div>
+                    </div>
+                    <div class="sub-footer">
+                        <div class="category-badge">
+                            <i class="fas fa-${sub.icon}"></i>
+                            ${sub.category}
+                        </div>
+                        <div class="status-badge ${getStatusClass(sub.status)}">
+                            ${getStatusText(sub.status)}
+                        </div>
+                    </div>
+                `;
+
+          container.appendChild(item);
+        });
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        const id = parseInt(getParameterByName("id"));
+
+        if (!id) {
+          document.getElementById("emptyState").style.display = "block";
+          return;
+        }
+
+        const latihan = getLatihanById(id);
+
+        if (!latihan) {
+          document.getElementById("emptyState").style.display = "block";
+          return;
+        }
+
+        renderHeader(latihan);
+        renderSubLatihan(latihan.subLatihan);
+      });
+    </script>
+  </body>
+</html>

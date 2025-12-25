@@ -5,204 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak & Pengumpulan Tugas Hanna</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff5f5;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px;
-      background-color: #a63a3a;
-      color: white;
-    }
-
-    h1 { margin: 0; }
-
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .contact-info, .contact-form {
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      padding: 30px;
-      flex: 1 1 350px;
-
-      /* efek transisi */
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .contact-info h2, .contact-form h2 {
-      color: #a63a3a;
-      margin-bottom: 15px;
-      position: relative;
-    }
-
-    .contact-info h2::after, .contact-form h2::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background-color: #a63a3a;
-      bottom: -5px;
-      left: 0;
-      border-radius: 2px;
-      transition: width 0.3s ease;
-    }
-
-    .contact-info h2:hover::after, .contact-form h2:hover::after {
-      width: 100%;
-    }
-
-    .contact-info p {
-      margin: 10px 0;
-      color: #555;
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .contact-info a { color: #a63a3a; text-decoration: none; }
-    .contact-info a:hover { text-decoration: underline; }
-
-    .contact-info i {
-      color: #a63a3a;
-      font-size: 18px;
-      width: 25px;
-      text-align: center;
-    }
-
-    form { display: flex; flex-direction: column; }
-
-    label {
-      margin-bottom: 5px;
-      font-weight: 500;
-      color: #a63a3a;
-    }
-
-    input, textarea {
-      margin-bottom: 15px;
-      padding: 12px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 15px;
-      font-family: 'Poppins', sans-serif;
-
-      /* efek fokus */
-      transition: all 0.3s ease;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #a63a3a;
-      box-shadow: 0 0 8px rgba(166,58,58,0.4);
-      outline: none;
-    }
-
-    button {
-      background-color: #a63a3a;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s, transform 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #8c2f2f;
-      transform: translateY(-2px);
-    }
-
-    footer {
-.footer-link {
-  color: white;
-  text-decoration: underline;
-  transition: 0.3s;
-}
-
-.footer-link:hover {
-  color: #d98b73; /* warna saat hover */
-}
-
-      text-align: center;
-      padding: 15px;
-      background-color: #a63a3a;
-      color: white;
-      margin-top: 40px;
-    }
-
-    .social-icons {
-      margin-top: 20px;
-      display: flex;
-      gap: 15px;
-    }
-
-    .social-icons a {
-      color: white;
-      background-color: #fcf5f5;
-      padding: 10px;
-      border-radius: 50%;
-      text-align: center;
-      width: 38px;
-      height: 38px;
-      transition: 0.3s, transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-    nav {
-    background-color: #d98b73;
-    text-align: center;
-    padding: 10px 0;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-nav a:hover {
-    color: #a63a50;
-}
-
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div id="navbar"></div>
+
+<br><br>
 
 <header>
   <h1>Kontak Hanna</h1>
   <p>Yuk, terhubung dan saling berbagi cerita 🌸</p>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="Profile.html">Profile</a>
-    <a href="About.html">About</a>
-    <a href="Galeri.html">Galeri</a>
-    <a href="Kontak.html">Kontak</a>
-    <a href="Tugas.html">Tugas</a>
-</nav>
 
 <div class="contact-container">
   <!-- Informasi Kontak -->
@@ -243,29 +57,29 @@ nav a:hover {
 
 
 <footer>
-  <p>© 2025 Hanna Syabila | Dibuat dengan ❤️</p><a href="index.html" class="footer-link">Kembali ke Beranda</a>
+  <p>© 2025 Hanna Syabila | Dibuat dengan ❤️ dan Kasih sayang</p><a href="index.html" class="footer-link">Kembali ke Beranda</a>
 
 </footer>
+<script src="assets/js/load-component.js"></script>
 
-<script>
-  // Animasi muncul elemen saat scroll
-  const faders = document.querySelectorAll('.contact-info, .contact-form');
-  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+  <script>
+    // Animasi muncul elemen saat scroll
+    const faders = document.querySelectorAll('.contact-info, .contact-form');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-        observer.unobserve(entry.target);
-      }
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
     });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-</script>
-
+  </script>
 </body>
 </html>
 

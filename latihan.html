@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Latihan Pemrograman Web 1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+          135deg,
+          #e8797c 0%,
+          #c95d72 100%
+        ); /* Ganti gradient */
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .progress-overview {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+        color: white;
+      }
+
+      .progress-stats {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-item .number {
+        font-size: 2.5em;
+        font-weight: bold;
+        display: block;
+      }
+
+      .stat-item .label {
+        font-size: 0.9em;
+        opacity: 0.9;
+      }
+
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(
+          90deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+      }
+      .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .card-icon {
+        font-size: 2.5em;
+        margin-right: 15px;
+      }
+
+      .card-title {
+        flex: 1;
+      }
+
+      .card-title h2 {
+        font-size: 1.3em;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .minggu-badge {
+        display: inline-block;
+        background: linear-gradient(
+          135deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+      .card-description {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;
+        font-size: 0.95em;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+      }
+
+      .duration {
+        display: flex;
+        align-items: center;
+        color: #c95d72; /* Ganti warna */
+        font-weight: 600;
+        font-size: 0.9em;
+      }
+      .duration i {
+        margin-right: 5px;
+      }
+
+      .sub-count {
+        background: #f0f0f0;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        color: #666;
+        font-weight: 600;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 8px;
+        background: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 15px;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          #e8797c,
+          #c95d72
+        ); /* Ganti gradient */
+        transition: width 0.3s ease;
+      }
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 1.8em;
+        }
+
+        .cards-container {
+          grid-template-columns: 1fr;
+        }
+
+        .stat-item .number {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <br><br>
+    <div class="container">
+      <header>
+        <h1>📚 Daftar Latihan Pemrograman Web 1</h1>
+        <p>Dokumentasi Progress Pembelajaran HTML, CSS & JavaScript</p>
+      </header>
+
+      <div class="progress-overview">
+        <h3 style="margin-bottom: 15px; text-align: center">
+          📊 Progress Overview
+        </h3>
+        <div class="progress-stats">
+          <div class="stat-item">
+            <span class="number" id="totalPertemuan">0</span>
+            <span class="label">Total Pertemuan</span>
+          </div>
+          <div class="stat-item">
+            <span class="number" id="totalLatihan">0</span>
+            <span class="label">Total Latihan</span>
+          </div>
+          <div class="stat-item">
+            <span class="number" id="latihanSelesai">0</span>
+            <span class="label">Latihan Selesai</span>
+          </div>
+          <div class="stat-item">
+            <span class="number" id="progressPercent">0%</span>
+            <span class="label">Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-container" id="cardsContainer">
+        <!-- Cards will be generated dynamically -->
+      </div>
+    </div>
+
+    <script src="latihan-data.js"></script>
+    <script src="assets/js/load-component.js"></script>
+    <script>
+      // Function to calculate progress for each pertemuan
+      function calculateProgress(subLatihan) {
+        const selesai = subLatihan.filter(
+          (sub) => sub.status === "selesai"
+        ).length;
+        const total = subLatihan.length;
+        return Math.round((selesai / total) * 100);
+      }
+
+      // Function to render cards
+      function renderCards() {
+        const container = document.getElementById("cardsContainer");
+        const allLatihan = getAllLatihan();
+
+        allLatihan.forEach((latihan) => {
+          const progress = calculateProgress(latihan.subLatihan);
+
+          const card = document.createElement("div");
+          card.className = "card";
+          card.onclick = () => {
+            window.location.href = `sublatihan.html?id=${latihan.id}`;
+          };
+
+          card.innerHTML = `
+                    <div class="card-header">
+                        <div class="card-icon">${latihan.icon}</div>
+                        <div class="card-title">
+                            <h2>${latihan.title}</h2>
+                            <span class="minggu-badge">Minggu ${latihan.minggu}</span>
+                        </div>
+                    </div>
+                    <p class="card-description">${latihan.description}</p>
+                    <div class="card-footer">
+                        <div class="duration">
+                            <i class="far fa-clock"></i>
+                            ${latihan.duration}
+                        </div>
+                        <div class="sub-count">
+                            ${latihan.totalSub} Latihan
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${progress}%"></div>
+                    </div>
+                `;
+
+          container.appendChild(card);
+        });
+      }
+
+      // Function to update progress overview
+      function updateProgressOverview() {
+        const progress = calculateOverallProgress();
+        const allLatihan = getAllLatihan();
+
+        document.getElementById("totalPertemuan").textContent =
+          allLatihan.length;
+        document.getElementById("totalLatihan").textContent = progress.total;
+        document.getElementById("latihanSelesai").textContent =
+          progress.selesai;
+        document.getElementById("progressPercent").textContent =
+          progress.percentage + "%";
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        renderCards();
+        updateProgressOverview();
+      });
+    </script>
+  </body>
+</html>
