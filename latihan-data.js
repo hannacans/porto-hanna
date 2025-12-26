@@ -16,7 +16,7 @@ const latihanData = {
         category: "HTML5",
         icon: "fa-code",
         status: "selesai",
-        link: "../Latihan/pertemuan 2/formatdokumen.html"
+        link: "Latihan/pertemuan 2/formatdokumen.html"
       },
       {
         id: 2,
@@ -25,7 +25,7 @@ const latihanData = {
         category: "SEO",
         icon: "fa-tag",
         status: "selesai",
-        link: "../Latihan/pertemuan 2/metatag.html"
+        link: "Latihan/pertemuan 2/metatag.html"
       },
       {
         id: 3,
@@ -34,7 +34,7 @@ const latihanData = {
         category: "Text",
         icon: "fa-align-left",
         status: "selesai",
-        link: "../Latihan/pertemuan 2/penggunaanpre.html"
+        link: "Latihan/pertemuan 2/penggunaanpre.html"
       }
     ]
   },
@@ -54,7 +54,7 @@ const latihanData = {
         category: "Font",
         icon: "fa-font",
         status: "selesai",
-        link: "../Latihan/pertemuan 3/font.html"
+        link: "Latihan/pertemuan 3/font.html"
       },
       {
         id: 2,
@@ -63,7 +63,7 @@ const latihanData = {
         category: "Format",
         icon: "fa-bold",
         status: "selesai",
-        link: "../Latihan/pertemuan 3/formatteks.html"
+        link: "Latihan/pertemuan 3/formatteks.html"
       },
       {
         id: 3,
@@ -72,7 +72,7 @@ const latihanData = {
         category: "Animation",
         icon: "fa-arrows-alt-h",
         status: "selesai",
-        link: "../Latihan/pertemuan 3/marquee.html"
+        link: "Latihan/pertemuan 3/marquee.html"
       },
       {
         id: 4,
@@ -81,7 +81,7 @@ const latihanData = {
         category: "Special",
         icon: "fa-text-height",
         status: "selesai",
-        link: "../Latihan/pertemuan 3/small_big_strike.html"
+        link: "Latihan/pertemuan 3/small_big_strike.html"
       },
       {
         id: 5,
@@ -90,7 +90,7 @@ const latihanData = {
         category: "Special",
         icon: "fa-superscript",
         status: "selesai",
-        link: "../Latihan/pertemuan 3/superscript_subscript.html"
+        link: "Latihan/pertemuan 3/superscript_subscript.html"
       }
     ]
   },
@@ -110,7 +110,7 @@ const latihanData = {
         category: "Media",
         icon: "fa-play-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/audio_video.html"
+        link: "Latihan/pertemuan 4/audio_video.html"
       },
       {
         id: 2,
@@ -119,7 +119,7 @@ const latihanData = {
         category: "Audio",
         icon: "fa-music",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/audio.html"
+        link: "Latihan/pertemuan 4/audio.html"
       },
       {
         id: 3,
@@ -128,7 +128,7 @@ const latihanData = {
         category: "Image",
         icon: "fa-image",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/gambar.html"
+        link: "Latihan/pertemuan 4/gambar.html"
       },
       {
         id: 4,
@@ -137,7 +137,7 @@ const latihanData = {
         category: "Interactive",
         icon: "fa-map-marked-alt",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/imagemap.html"
+        link: "Latihan/pertemuan 4/imagemap.html"
       },
       {
         id: 5,
@@ -146,7 +146,7 @@ const latihanData = {
         category: "Video",
         icon: "fa-video",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/video.html"
+        link: "Latihan/pertemuan 4/video.html"
       },
       {
         id: 6,
@@ -155,7 +155,7 @@ const latihanData = {
         category: "Advanced",
         icon: "fa-sliders-h",
         status: "selesai",
-        link: "../Latihan/pertemuan 4/videowithjs.html"
+        link: "Latihan/pertemuan 4/videowithjs.html"
       }
     ]
   },
@@ -175,7 +175,7 @@ const latihanData = {
         category: "Navigation",
         icon: "fa-link",
         status: "selesai",
-        link: "../Latihan/pertemuan 5/hyperlink.html"
+        link: "Latihan/pertemuan 5/hyperlink.html"
       }
     ]
   },
@@ -195,7 +195,7 @@ const latihanData = {
         category: "List",
         icon: "fa-list-alt",
         status: "selesai",
-        link: "../Latihan/pertemuan 6/definitionlist.html"
+        link: "Latihan/pertemuan 6/definitionlist.html"
       },
       {
         id: 2,
@@ -204,7 +204,7 @@ const latihanData = {
         category: "Navigation",
         icon: "fa-bars",
         status: "selesai",
-        link: "../Latihan/pertemuan 6/menulist.html"
+        link: "Latihan/pertemuan 6/menulist.html"
       },
       {
         id: 3,
@@ -213,7 +213,7 @@ const latihanData = {
         category: "List",
         icon: "fa-list-ol",
         status: "selesai",
-        link: "../Latihan/pertemuan 6/orderedlist.html"
+        link: "Latihan/pertemuan 6/orderedlist.html"
       },
       {
         id: 4,
@@ -222,7 +222,7 @@ const latihanData = {
         category: "List",
         icon: "fa-list-ul",
         status: "selesai",
-        link: "../Latihan/pertemuan 6/unorderedlist.html"
+        link: "Latihan/pertemuan 6/unorderedlist.html"
       },
       {
         id: 5,
@@ -231,7 +231,7 @@ const latihanData = {
         category: "Advanced",
         icon: "fa-tasks",
         status: "selesai",
-        link: "../Latihan/pertemuan 6/lengkap.html"
+        link: "Latihan/pertemuan 6/lengkap.html"
       }
     ]
   },
@@ -251,7 +251,7 @@ const latihanData = {
         category: "Table",
         icon: "fa-table",
         status: "selesai",
-        link: "../Latihan/pertemuan 7/biodata.html"
+        link: "Latihan/pertemuan 7/biodata.html"
       },
       {
         id: 2,
@@ -260,7 +260,7 @@ const latihanData = {
         category: "Advanced",
         icon: "fa-th",
         status: "selesai",
-        link: "../Latihan/pertemuan 7/tabel_colspan_rowspan.html"
+        link: "Latihan/pertemuan 7/tabel_colspan_rowspan.html"
       },
       {
         id: 3,
@@ -269,7 +269,7 @@ const latihanData = {
         category: "Advanced",
         icon: "fa-th",
         status: "selesai",
-        link: "../Latihan/pertemuan 7/TravelTime/index.html"
+        link: "Latihan/pertemuan 7/TravelTime/index.html"
       }      
     ]
   },
@@ -289,7 +289,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-edit",
         status: "selesai",
-        link: "../Latihan/pertemuan 8/form.html"
+        link: "Latihan/pertemuan 8/form.html"
       }
     ]
   },
@@ -309,7 +309,7 @@ const latihanData = {
         category: "Layout",
         icon: "fa-window-restore",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/index.html"
+        link: "Latihan/pertemuan 9/index.html"
       },
       {
         id: 2,
@@ -318,7 +318,7 @@ const latihanData = {
         category: "Content",
         icon: "fa-home",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/home.html"
+        link: "Latihan/pertemuan 9/home.html"
       },
       {
         id: 3,
@@ -327,7 +327,7 @@ const latihanData = {
         category: "Media",
         icon: "fa-images",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/gallery.html"
+        link: "Latihan/pertemuan 9/gallery.html"
       },
       {
         id: 4,
@@ -336,7 +336,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-envelope",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/kontak.html"
+        link: "Latihan/pertemuan 9/kontak.html"
       },
       {
         id: 5,
@@ -345,7 +345,7 @@ const latihanData = {
         category: "Content",
         icon: "fa-user",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/profile.html"
+        link: "Latihan/pertemuan 9/profile.html"
       },
       {
         id: 6,
@@ -354,7 +354,7 @@ const latihanData = {
         category: "Navigation",
         icon: "fa-bars",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/menu.html"
+        link: "Latihan/pertemuan 9/menu.html"
       },
       {
         id: 7,
@@ -363,7 +363,7 @@ const latihanData = {
         category: "Navigation",
         icon: "fa-bars",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/menu.html"
+        link: "Latihan/pertemuan 9/menu.html"
       },
       {
         id: 8,
@@ -372,7 +372,7 @@ const latihanData = {
         category: "Navigation",
         icon: "fa-bars",
         status: "selesai",
-        link: "../index.html"
+        link: "index.html"
       }
     ]
   },
@@ -392,7 +392,7 @@ const latihanData = {
         category: "Embed",
         icon: "fa-window-maximize",
         status: "selesai",
-        link: "../Latihan/pertemuan 10/iframe.html"
+        link: "Latihan/pertemuan 10/iframe.html"
       },
       {
         id: 2,
@@ -401,7 +401,7 @@ const latihanData = {
         category: "Styling",
         icon: "fa-paint-brush",
         status: "selesai",
-        link: "../Latihan/pertemuan 10/iframe(css).html"
+        link: "Latihan/pertemuan 10/iframe(css).html"
       }
     ]
   },
@@ -421,7 +421,7 @@ const latihanData = {
         category: "Semantic",
         icon: "fa-file-alt",
         status: "selesai",
-        link: "../Latihan/pertemuan 11/article_dan_section.html"
+        link: "Latihan/pertemuan 11/article_dan_section.html"
       },
       {
         id: 2,
@@ -430,7 +430,7 @@ const latihanData = {
         category: "Styling",
         icon: "fa-palette",
         status: "selesai",
-        link: "../Latihan/pertemuan 11/css_background_font.html"
+        link: "Latihan/pertemuan 11/css_background_font.html"
       },
       {
         id: 3,
@@ -439,7 +439,7 @@ const latihanData = {
         category: "Background",
         icon: "fa-image",
         status: "selesai",
-        link: "../Latihan/pertemuan 11/css_bg_image.html"
+        link: "Latihan/pertemuan 11/css_bg_image.html"
       },
       {
         id: 4,
@@ -448,7 +448,7 @@ const latihanData = {
         category: "Advanced",
         icon: "fa-plus-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 11/css_create_element.html"
+        link: "Latihan/pertemuan 11/css_create_element.html"
       },
       {
         id: 5,
@@ -457,7 +457,7 @@ const latihanData = {
         category: "Layout",
         icon: "fa-align-left",
         status: "selesai",
-        link: "../Latihan/pertemuan 11/css_float_gambar.html"
+        link: "Latihan/pertemuan 11/css_float_gambar.html"
       },
       {
         id: 6,
@@ -466,7 +466,7 @@ const latihanData = {
         category: "Layout",
         icon: "fa-bars",
         status: "selesai",
-        link: "../Latihan/pertemuan 9/menu.html"
+        link: "Latihan/pertemuan 9/menu.html"
       }
     ]
   },
@@ -486,7 +486,7 @@ const latihanData = {
         category: "Alignment",
         icon: "fa-align-center",
         status: "selesai",
-        link: "../Latihan/pertemuan 12/css_align_date.html"
+        link: "Latihan/pertemuan 12/css_align_date.html"
       },
       {
         id: 2,
@@ -495,7 +495,7 @@ const latihanData = {
         category: "Selector",
         icon: "fa-dot-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 12/css_dengan_class.html"
+        link: "Latihan/pertemuan 12/css_dengan_class.html"
       },
       {
         id: 3,
@@ -504,7 +504,7 @@ const latihanData = {
         category: "External",
         icon: "fa-file-code",
         status: "selesai",
-        link: "../Latihan/pertemuan 12/css_external.html"
+        link: "Latihan/pertemuan 12/css_external.html"
       },
       {
         id: 4,
@@ -513,7 +513,7 @@ const latihanData = {
         category: "Organization",
         icon: "fa-folder-open",
         status: "selesai",
-        link: "../Latihan/pertemuan 12/style.css"
+        link: "Latihan/pertemuan 12/style.css"
       },
             {
         id: 4,
@@ -522,7 +522,7 @@ const latihanData = {
         category: "Organization",
         icon: "fa-folder-open",
         status: "selesai",
-        link: "../Latihan/pertemuan 12/indexTugaspertemuan12.html"
+        link: "Latihan/pertemuan 12/indexTugaspertemuan12.html"
       }
 
     ]
@@ -543,7 +543,7 @@ const latihanData = {
         category: "Container",
         icon: "fa-square",
         status: "selesai",
-        link: "../Latihan/pertemuan13/div.html"
+        link: "Latihan/pertemuan13/div.html"
       },
       {
         id: 2,
@@ -552,7 +552,7 @@ const latihanData = {
         category: "Selector",
         icon: "fa-code-branch",
         status: "selesai",
-        link: "../Latihan/pertemuan13/id_dengan_class.html"
+        link: "Latihan/pertemuan13/id_dengan_class.html"
       },
       {
         id: 3,
@@ -561,7 +561,7 @@ const latihanData = {
         category: "Selector",
         icon: "fa-hashtag",
         status: "selesai",
-        link: "../Latihan/pertemuan13/id.html"
+        link: "Latihan/pertemuan13/id.html"
       },
       {
         id: 4,
@@ -570,7 +570,7 @@ const latihanData = {
         category: "Layout",
         icon: "fa-th-large",
         status: "selesai",
-        link: "../Latihan/pertemuan13/layout_dengan_div.html"
+        link: "Latihan/pertemuan13/layout_dengan_div.html"
       },
       {
         id: 5,
@@ -579,7 +579,7 @@ const latihanData = {
         category: "Inline",
         icon: "fa-i-cursor",
         status: "selesai",
-        link: "../Latihan/pertemuan13/span.html"
+        link: "Latihan/pertemuan13/span.html"
       }
     ]
   },
@@ -599,7 +599,7 @@ const latihanData = {
         category: "Output",
         icon: "fa-exclamation-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 14/jsdasar_alert.html"
+        link: "Latihan/pertemuan 14/jsdasar_alert.html"
       },
       {
         id: 2,
@@ -608,7 +608,7 @@ const latihanData = {
         category: "Math",
         icon: "fa-calculator",
         status: "selesai",
-        link: "../Latihan/pertemuan 14/variabel_perhitungan.html"
+        link: "Latihan/pertemuan 14/variabel_perhitungan.html"
       },
       {
         id: 3,
@@ -617,7 +617,7 @@ const latihanData = {
         category: "Variable",
         icon: "fa-cube",
         status: "selesai",
-        link: "../Latihan/pertemuan 14/variabeldalamjs.html"
+        link: "Latihan/pertemuan 14/variabeldalamjs.html"
       },
       {
         id: 4,
@@ -626,7 +626,7 @@ const latihanData = {
         category: "Bootstrap",
         icon: "fa-cube",
         status: "selesai",
-        link: "../pertemuan 14/index.html"
+        link: "pertemuan 14/index.html"
       }
     ]
   },
@@ -646,7 +646,7 @@ const latihanData = {
         category: "Dialog",
         icon: "fa-bell",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/latihan15-alert.html"
+        link: "Latihan/pertemuan 15/latihan15-alert.html"
       },
       {
         id: 2,
@@ -655,7 +655,7 @@ const latihanData = {
         category: "Dialog",
         icon: "fa-question-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/latihan15-confirm.html"
+        link: "Latihan/pertemuan 15/latihan15-confirm.html"
       },
       {
         id: 3,
@@ -664,7 +664,7 @@ const latihanData = {
         category: "Event",
         icon: "fa-mouse-pointer",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/latihan15-EventOnclick.html"
+        link: "Latihan/pertemuan 15/latihan15-EventOnclick.html"
       },
       {
         id: 4,
@@ -673,7 +673,7 @@ const latihanData = {
         category: "Input",
         icon: "fa-keyboard",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/latihan15-prompt.html"
+        link: "Latihan/pertemuan 15/latihan15-prompt.html"
       },
       {
         id: 5,
@@ -682,7 +682,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-text-width",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/form_input_type_text.html"
+        link: "Latihan/pertemuan 15/form_input_type_text.html"
       },
       {
         id: 6,
@@ -691,7 +691,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-dot-circle",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/input_type_radio.html"
+        link: "Latihan/pertemuan 15/input_type_radio.html"
       },
       {
         id: 7,
@@ -700,7 +700,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-caret-square-down",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/input_type_select.html"
+        link: "Latihan/pertemuan 15/input_type_select.html"
       },
       {
         id: 8,
@@ -709,7 +709,7 @@ const latihanData = {
         category: "Form",
         icon: "fa-check-square",
         status: "selesai",
-        link: "../Latihan/pertemuan 15/input_type_checkbox.html"
+        link: "Latihan/pertemuan 15/input_type_checkbox.html"
       }
     ]
   },
@@ -729,7 +729,7 @@ const latihanData = {
         category: "Loop",
         icon: "fa-sync",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/latihan_looping.html"
+        link: "Latihan/pertemuan 16/latihan_looping.html"
       },
       {
         id: 2,
@@ -738,7 +738,7 @@ const latihanData = {
         category: "Operator",
         icon: "fa-plus-minus",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-operator.html"
+        link: "Latihan/pertemuan 16/Latihan16-operator.html"
       },
       {
         id: 3,
@@ -747,7 +747,7 @@ const latihanData = {
         category: "Math",
         icon: "fa-calculator",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-operatoraritmatika.html"
+        link: "Latihan/pertemuan 16/Latihan16-operatoraritmatika.html"
       },
       {
         id: 4,
@@ -756,7 +756,7 @@ const latihanData = {
         category: "Assignment",
         icon: "fa-equals",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-operatorassignment.html"
+        link: "Latihan/pertemuan 16/Latihan16-operatorassignment.html"
       },
       {
         id: 5,
@@ -765,7 +765,7 @@ const latihanData = {
         category: "Comparison",
         icon: "fa-balance-scale",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-Operatorpembanding.html"
+        link: "Latihan/pertemuan 16/Latihan16-Operatorpembanding.html"
       },
       {
         id: 6,
@@ -774,7 +774,7 @@ const latihanData = {
         category: "Logic",
         icon: "fa-sitemap",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-operatorlogika.html"
+        link: "Latihan/pertemuan 16/Latihan16-operatorlogika.html"
       },
       {
         id: 7,
@@ -783,7 +783,7 @@ const latihanData = {
         category: "String",
         icon: "fa-quote-right",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-operatorstring.html"
+        link: "Latihan/pertemuan 16/Latihan16-operatorstring.html"
       },
       {
         id: 8,
@@ -792,7 +792,7 @@ const latihanData = {
         category: "Type",
         icon: "fa-search",
         status: "selesai",
-        link: "../Latihan/pertemuan 16/Latihan16-tipedata.html"
+        link: "Latihan/pertemuan 16/Latihan16-tipedata.html"
       }
     ]
   },
@@ -812,7 +812,7 @@ const latihanData = {
         category: "Loop",
         icon: "fa-redo",
         status: "selesai",
-        link: "../Latihan/pertemuan 17/Latihan17-do-while-loop.html"
+        link: "Latihan/pertemuan 17/Latihan17-do-while-loop.html"
       },
       {
         id: 2,
@@ -821,7 +821,7 @@ const latihanData = {
         category: "Loop",
         icon: "fa-repeat",
         status: "selesai",
-        link: "../Latihan/pertemuan 17/Latihan17-forloop.html"
+        link: "Latihan/pertemuan 17/Latihan17-forloop.html"
       },
       {
         id: 3,
@@ -830,7 +830,7 @@ const latihanData = {
         category: "Conditional",
         icon: "fa-code-branch",
         status: "selesai",
-        link: "../Latihan/pertemuan 17/Latihan17-if-else.html"
+        link: "Latihan/pertemuan 17/Latihan17-if-else.html"
       },
       {
         id: 4,
@@ -839,7 +839,7 @@ const latihanData = {
         category: "Conditional",
         icon: "fa-random",
         status: "selesai",
-        link: "../Latihan/pertemuan 17/Latihan17-Switch-case.html"
+        link: "Latihan/pertemuan 17/Latihan17-Switch-case.html"
       },
       {
         id: 5,
@@ -848,7 +848,7 @@ const latihanData = {
         category: "Loop",
         icon: "fa-sync-alt",
         status: "selesai",
-        link: "../Latihan/pertemuan 17/Latihan17-Whileloop.html"
+        link: "Latihan/pertemuan 17/Latihan17-Whileloop.html"
       }
     ]
   },
@@ -868,7 +868,7 @@ const latihanData = {
         category: "Array",
         icon: "fa-layer-group",
         status: "selesai",
-        link: "../Latihan/pertemuan 18/Latihan18-array.html"
+        link: "Latihan/pertemuan 18/Latihan18-array.html"
       },
       {
         id: 2,
@@ -877,7 +877,7 @@ const latihanData = {
         category: "Function",
         icon: "fa-function",
         status: "selesai",
-        link: "../Latihan/pertemuan 18/Latihan18-function.html"
+        link: "Latihan/pertemuan 18/Latihan18-function.html"
       },
       {
         id: 3,
@@ -886,7 +886,7 @@ const latihanData = {
         category: "Project",
         icon: "fa-thermometer-half",
         status: "selesai",
-        link: "../Latihan/pertemuan 18/Latihan18-konversisuhudenganarray.html"
+        link: "Latihan/pertemuan 18/Latihan18-konversisuhudenganarray.html"
       }
     ]
   }
