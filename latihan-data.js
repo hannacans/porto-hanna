@@ -590,7 +590,7 @@ const latihanData = {
     minggu: 13,
     description: "Dasar-dasar JavaScript untuk membuat website interaktif dan dinamis",
     duration: "2.5 Jam",
-    totalSub: 3,
+    totalSub: 4,
     subLatihan: [
       {
         id: 1,
