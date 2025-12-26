@@ -626,7 +626,7 @@ const latihanData = {
         category: "Bootstrap",
         icon: "fa-cube",
         status: "selesai",
-        link: "pertemuan 14/index.html"
+        link: "pertemuan 14/landingpage.html"
       }
     ]
   },
